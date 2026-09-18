@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plots>
+  <!--assembly_xy-->
+  <plot id="1" name="assembly_xy" filename="assembly_xy" color_by="material" type="slice" basis="xy">
+    <pixels>1200 1200</pixels>
+    <background>255 255 255</background>
+    <origin>0.0 0.0 0.0</origin>
+    <width>20.790000000000003 20.790000000000003</width>
+    <color id="1" rgb="178 34 34"/>
+    <color id="2" rgb="255 215 0"/>
+    <color id="3" rgb="176 196 222"/>
+    <color id="4" rgb="0 191 255"/>
+    <color id="5" rgb="65 105 225"/>
+    <color id="6" rgb="105 105 105"/>
+  </plot>
+  <!--core_xy-->
+  <plot id="2" name="core_xy" filename="core_xy" color_by="material" type="slice" basis="xy">
+    <pixels>1600 1600</pixels>
+    <background>255 255 255</background>
+    <origin>0.0 0.0 0.0</origin>
+    <width>172.20000000000002 172.20000000000002</width>
+    <color id="1" rgb="178 34 34"/>
+    <color id="2" rgb="255 215 0"/>
+    <color id="3" rgb="176 196 222"/>
+    <color id="4" rgb="0 191 255"/>
+    <color id="5" rgb="65 105 225"/>
+    <color id="6" rgb="105 105 105"/>
+  </plot>
+  <!--core_xz-->
+  <plot id="3" name="core_xz" filename="core_xz" color_by="material" type="slice" basis="xz">
+    <pixels>1200 1600</pixels>
+    <background>255 255 255</background>
+    <origin>0.0 0.0 0.0</origin>
+    <width>172.20000000000002 178.5</width>
+    <color id="1" rgb="178 34 34"/>
+    <color id="2" rgb="255 215 0"/>
+    <color id="3" rgb="176 196 222"/>
+    <color id="4" rgb="0 191 255"/>
+    <color id="5" rgb="65 105 225"/>
+    <color id="6" rgb="105 105 105"/>
+  </plot>
+</plots>

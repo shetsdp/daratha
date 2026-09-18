@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material id="1" name="UO2 fuel, 4.0 wt% U-235" depletable="true" temperature="575.65">
+    <density value="10.4" units="g/cm3"/>
+    <nuclide name="U234" ao="0.0003619114009814806"/>
+    <nuclide name="U235" ao="0.040490680355008565"/>
+    <nuclide name="U238" ao="0.9589619414796623"/>
+    <nuclide name="U236" ao="0.00018546676434767764"/>
+    <nuclide name="O16" ao="1.9952412"/>
+    <nuclide name="O17" ao="0.000758"/>
+    <nuclide name="O18" ao="0.0040008"/>
+  </material>
+  <material id="2" name="He gap gas" temperature="575.65">
+    <density value="0.0015" units="g/cm3"/>
+    <nuclide name="He3" ao="2e-06"/>
+    <nuclide name="He4" ao="0.999998"/>
+  </material>
+  <material id="3" name="Zircaloy-4 cladding" temperature="575.65">
+    <density value="6.56" units="g/cm3"/>
+    <nuclide name="Zr90" ao="0.505239"/>
+    <nuclide name="Zr91" ao="0.1101804"/>
+    <nuclide name="Zr92" ao="0.168413"/>
+    <nuclide name="Zr94" ao="0.1706716"/>
+    <nuclide name="Zr96" ao="0.027496"/>
+    <nuclide name="Sn112" ao="0.0001358"/>
+    <nuclide name="Sn114" ao="9.24e-05"/>
+    <nuclide name="Sn115" ao="4.76e-05"/>
+    <nuclide name="Sn116" ao="0.0020356000000000003"/>
+    <nuclide name="Sn117" ao="0.0010752"/>
+    <nuclide name="Sn118" ao="0.0033908000000000002"/>
+    <nuclide name="Sn119" ao="0.0012026"/>
+    <nuclide name="Sn120" ao="0.0045612"/>
+    <nuclide name="Sn122" ao="0.0006482"/>
+    <nuclide name="Sn124" ao="0.0008106"/>
+    <nuclide name="Fe54" ao="0.00011690000000000001"/>
+    <nuclide name="Fe56" ao="0.00183508"/>
+    <nuclide name="Fe57" ao="4.2380000000000004e-05"/>
+    <nuclide name="Fe58" ao="5.64e-06"/>
+    <nuclide name="Cr50" ao="4.3450000000000006e-05"/>
+    <nuclide name="Cr52" ao="0.00083789"/>
+    <nuclide name="Cr53" ao="9.501e-05"/>
+    <nuclide name="Cr54" ao="2.3650000000000002e-05"/>
+    <nuclide name="O16" ao="0.0009976206"/>
+    <nuclide name="O17" ao="3.79e-07"/>
+    <nuclide name="O18" ao="2.0004e-06"/>
+  </material>
+  <material id="4" name="Light water moderator/coolant, 0 ppm B" temperature="575.65">
+    <density value="0.72" units="g/cm3"/>
+    <nuclide name="H1" ao="1.99968852"/>
+    <nuclide name="H2" ao="0.00031148"/>
+    <nuclide name="O16" ao="0.9976206"/>
+    <nuclide name="O17" ao="0.000379"/>
+    <nuclide name="O18" ao="0.0020004"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="5" name="Guide tube water (unrodded)" temperature="575.65">
+    <density value="0.72" units="g/cm3"/>
+    <nuclide name="H1" ao="1.99968852"/>
+    <nuclide name="H2" ao="0.00031148"/>
+    <nuclide name="O16" ao="0.9976206"/>
+    <nuclide name="O17" ao="0.000379"/>
+    <nuclide name="O18" ao="0.0020004"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="6" name="SS304 (core barrel / RPV, structural)">
+    <density value="8.0" units="g/cm3"/>
+    <nuclide name="Fe54" ao="0.04062275"/>
+    <nuclide name="Fe56" ao="0.6376902999999999"/>
+    <nuclide name="Fe57" ao="0.014727049999999998"/>
+    <nuclide name="Fe58" ao="0.0019598999999999997"/>
+    <nuclide name="Cr50" ao="0.0082555"/>
+    <nuclide name="Cr52" ao="0.1591991"/>
+    <nuclide name="Cr53" ao="0.0180519"/>
+    <nuclide name="Cr54" ao="0.0044935"/>
+    <nuclide name="Ni58" ao="0.064673055"/>
+    <nuclide name="Ni60" ao="0.024911944999999998"/>
+    <nuclide name="Ni61" ao="0.001082905"/>
+    <nuclide name="Ni62" ao="0.0034527750000000004"/>
+    <nuclide name="Ni64" ao="0.0008793200000000001"/>
+    <nuclide name="Mn55" ao="0.02"/>
+  </material>
+</materials>
