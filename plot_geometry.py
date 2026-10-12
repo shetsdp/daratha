@@ -29,18 +29,18 @@ import openmc
 # Importing model.py builds materials/geometry/settings/tallies and writes
 # their XML files as a side effect (openmc.run() itself is guarded behind
 # `if __name__ == "__main__"` in model.py, so it does NOT execute here).
-import model
+import modelold
 
 # ---------------------------------------------------------------------------
 # Color scheme: one consistent color per material across all three plots
 # ---------------------------------------------------------------------------
 colors = {
-    model.fuel: "firebrick",
-    model.helium: "gold",
-    model.clad: "lightsteelblue",
-    model.water: "deepskyblue",
-    model.guide_tube_water: "royalblue",
-    model.steel: "dimgray",
+    modelold.fuel: "firebrick",
+    modelold.helium: "gold",
+    modelold.clad: "lightsteelblue",
+    modelold.water: "deepskyblue",
+    modelold.guide_tube_water: "royalblue",
+    modelold.steel: "dimgray",
 }
 
 # ---------------------------------------------------------------------------
@@ -50,7 +50,7 @@ assembly_plot = openmc.Plot(name="assembly_xy")
 assembly_plot.filename = "assembly_xy"
 assembly_plot.basis = "xy"
 assembly_plot.origin = (0.0, 0.0, 0.0)  # core midplane, z=0
-assembly_plot.width = (model.ASSEM_PITCH_CM * 1.05, model.ASSEM_PITCH_CM * 1.05)
+assembly_plot.width = (modelold.ASSEM_PITCH_CM * 1.05, modelold.ASSEM_PITCH_CM * 1.05)
 assembly_plot.pixels = (1200, 1200)
 assembly_plot.color_by = "material"
 assembly_plot.colors = colors
@@ -63,7 +63,7 @@ core_xy_plot = openmc.Plot(name="core_xy")
 core_xy_plot.filename = "core_xy"
 core_xy_plot.basis = "xy"
 core_xy_plot.origin = (0.0, 0.0, 0.0)
-full_width_cm = model.rpv_od_cm * 1.05
+full_width_cm = modelold.rpv_od_cm * 1.05
 core_xy_plot.width = (full_width_cm, full_width_cm)
 core_xy_plot.pixels = (1600, 1600)
 core_xy_plot.color_by = "material"
@@ -77,7 +77,7 @@ core_xz_plot = openmc.Plot(name="core_xz")
 core_xz_plot.filename = "core_xz"
 core_xz_plot.basis = "xz"
 core_xz_plot.origin = (0.0, 0.0, 0.0)
-total_height_cm = 2 * (model.ACTIVE_LENGTH_CM / 2.0 + model.AXIAL_REFLECTOR_CM) * 1.05
+total_height_cm = 2 * (modelold.ACTIVE_LENGTH_CM / 2.0 + modelold.AXIAL_REFLECTOR_CM) * 1.05
 core_xz_plot.width = (full_width_cm, total_height_cm)
 core_xz_plot.pixels = (1200, 1600)
 core_xz_plot.color_by = "material"

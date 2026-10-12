@@ -10,12 +10,29 @@
     <nuclide name="O17" ao="0.000758"/>
     <nuclide name="O18" ao="0.0040008"/>
   </material>
-  <material id="2" name="He gap gas" temperature="575.65">
+  <material id="2" name="UO2 + 4.0 wt% Gd2O3 burnable absorber" depletable="true" temperature="575.65">
+    <density value="10.0" units="g/cm3"/>
+    <nuclide name="U234" wo="0.0003012551111111111"/>
+    <nuclide name="U235" wo="0.03384888888888888"/>
+    <nuclide name="U238" wo="0.8119163733333333"/>
+    <nuclide name="U236" wo="0.00015570488888888887"/>
+    <nuclide name="Gd152" wo="6.703921258475918e-05"/>
+    <nuclide name="Gd154" wo="0.0007403524960646221"/>
+    <nuclide name="Gd155" wo="0.005058958399161441"/>
+    <nuclide name="Gd156" wo="0.007042228870052367"/>
+    <nuclide name="Gd157" wo="0.005418613254597571"/>
+    <nuclide name="Gd158" wo="0.008655348645479259"/>
+    <nuclide name="Gd160" wo="0.007713591718745066"/>
+    <nuclide name="O16" wo="0.11876570643036521"/>
+    <nuclide name="O17" wo="4.795232529747405e-05"/>
+    <nuclide name="O18" wo="0.00026798642542999327"/>
+  </material>
+  <material id="3" name="He gap gas" temperature="575.65">
     <density value="0.0015" units="g/cm3"/>
     <nuclide name="He3" ao="2e-06"/>
     <nuclide name="He4" ao="0.999998"/>
   </material>
-  <material id="3" name="Zircaloy-4 cladding" temperature="575.65">
+  <material id="4" name="Zircaloy-4 cladding" temperature="575.65">
     <density value="6.56" units="g/cm3"/>
     <nuclide name="Zr90" ao="0.505239"/>
     <nuclide name="Zr91" ao="0.1101804"/>
@@ -44,7 +61,7 @@
     <nuclide name="O17" ao="3.79e-07"/>
     <nuclide name="O18" ao="2.0004e-06"/>
   </material>
-  <material id="4" name="Light water moderator/coolant, 0 ppm B" temperature="575.65">
+  <material id="5" name="Light water, 0 ppm B" temperature="575.65">
     <density value="0.72" units="g/cm3"/>
     <nuclide name="H1" ao="1.99968852"/>
     <nuclide name="H2" ao="0.00031148"/>
@@ -53,7 +70,7 @@
     <nuclide name="O18" ao="0.0020004"/>
     <sab name="c_H_in_H2O"/>
   </material>
-  <material id="5" name="Guide tube water (unrodded)" temperature="575.65">
+  <material id="6" name="Guide tube water (unrodded)" temperature="575.65">
     <density value="0.72" units="g/cm3"/>
     <nuclide name="H1" ao="1.99968852"/>
     <nuclide name="H2" ao="0.00031148"/>
@@ -62,7 +79,7 @@
     <nuclide name="O18" ao="0.0020004"/>
     <sab name="c_H_in_H2O"/>
   </material>
-  <material id="6" name="SS304 (core barrel / RPV, structural)">
+  <material id="8" name="SS304 (core barrel / RPV)">
     <density value="8.0" units="g/cm3"/>
     <nuclide name="Fe54" ao="0.04062275"/>
     <nuclide name="Fe56" ao="0.6376902999999999"/>

@@ -1,70 +1,74 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <geometry>
   <cell id="1" name="fuel" material="1" region="-1" universe="1"/>
-  <cell id="2" name="gap" material="2" region="1 -2" universe="1"/>
-  <cell id="3" name="clad" material="3" region="2 -3" universe="1"/>
-  <cell id="4" name="pin_moderator" material="4" region="3" universe="1"/>
-  <cell id="5" name="gt_water_inner" material="5" region="-4" universe="2"/>
-  <cell id="6" name="gt_tube_wall" material="3" region="4 -5" universe="2"/>
-  <cell id="7" name="gt_moderator" material="4" region="5" universe="2"/>
-  <cell id="8" name="assembly_interior" fill="3" region="6 -7 8 -9" universe="4"/>
-  <cell id="9" name="core_lattice_region" fill="5" region="10 -11 12 -13 20 -21" universe="6"/>
-  <cell id="10" name="inner_radial_reflector" material="4" region="(-10 | 11 | -12 | 13) -14 20 -21" universe="6"/>
-  <cell id="11" name="bottom_axial_reflector" material="4" region="-14 18 -20" universe="6"/>
-  <cell id="12" name="top_axial_reflector" material="4" region="-14 21 -19" universe="6"/>
-  <cell id="13" name="core_barrel" material="6" region="14 -15 18 -19" universe="6"/>
-  <cell id="14" name="downcomer" material="4" region="15 -16 18 -19" universe="6"/>
-  <cell id="15" name="rpv_wall" material="6" region="16 -17 18 -19" universe="6"/>
-  <lattice id="3" name="15x15 fuel assembly">
+  <cell id="2" name="gap" material="3" region="1 -2" universe="1"/>
+  <cell id="3" name="clad" material="4" region="2 -3" universe="1"/>
+  <cell id="4" name="pin_moderator" material="5" region="3" universe="1"/>
+  <cell id="5" name="gd_fuel" material="2" region="-1" universe="2"/>
+  <cell id="6" name="gd_gap" material="3" region="1 -2" universe="2"/>
+  <cell id="7" name="gd_clad" material="4" region="2 -3" universe="2"/>
+  <cell id="8" name="gd_pin_moderator" material="5" region="3" universe="2"/>
+  <cell id="9" name="gt_water_inner" material="6" region="-4" universe="3"/>
+  <cell id="10" name="gt_tube_wall" material="4" region="4 -5" universe="3"/>
+  <cell id="11" name="gt_moderator" material="5" region="5" universe="3"/>
+  <cell id="17" name="assembly_rod0_gd1_interior" fill="5" region="8 -9 10 -11" universe="6"/>
+  <cell id="19" name="core_lattice_region" fill="9" region="16 -17 18 -19 26 -27" universe="10"/>
+  <cell id="20" name="inner_radial_reflector" material="5" region="(-16 | 17 | -18 | 19) -20 26 -27" universe="10"/>
+  <cell id="21" name="bottom_axial_reflector" material="5" region="-20 24 -26" universe="10"/>
+  <cell id="22" name="top_axial_reflector" material="5" region="-20 27 -25" universe="10"/>
+  <cell id="23" name="core_barrel" material="8" region="20 -21 24 -25" universe="10"/>
+  <cell id="24" name="downcomer" material="5" region="21 -22 24 -25" universe="10"/>
+  <cell id="25" name="rpv_wall" material="8" region="22 -23 24 -25" universe="10"/>
+  <lattice id="5" name="assembly_rod0_gd1_lattice">
     <pitch>1.32 1.32</pitch>
     <dimension>15 15</dimension>
     <lower_left>-9.9 -9.9</lower_left>
     <universes>
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 2 1 1 2 1 1 2 1 1 2 1 1 2 1 
+1 1 3 1 1 1 1 3 1 1 1 1 3 1 1 
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 2 1 1 1 1 2 1 1 1 1 2 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 2 1 2 1 1 2 1 1 2 1 2 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 2 1 2 1 1 2 1 1 2 1 2 1 1 
+1 2 3 1 3 1 1 3 1 1 3 1 3 2 1 
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 2 1 2 1 1 2 1 1 2 1 2 1 1 
+1 1 3 1 3 1 1 3 1 1 3 1 3 1 1 
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 2 1 1 1 1 2 1 1 1 1 2 1 1 
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 2 3 1 3 1 1 3 1 1 3 1 3 2 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 3 1 1 1 1 3 1 1 1 1 3 1 1 
+1 2 1 1 1 1 1 2 1 1 1 1 1 2 1 
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </universes>
   </lattice>
-  <lattice id="5" name="4x4 core">
+  <lattice id="9" name="4x4 core">
     <pitch>19.8 19.8</pitch>
     <dimension>4 4</dimension>
     <lower_left>-39.6 -39.6</lower_left>
     <universes>
-4 4 4 4 
-4 4 4 4 
-4 4 4 4 
-4 4 4 4 </universes>
+6 6 6 6 
+6 6 6 6 
+6 6 6 6 
+6 6 6 6 </universes>
   </lattice>
   <surface id="1" type="z-cylinder" coeffs="0.0 0.0 0.46"/>
   <surface id="2" type="z-cylinder" coeffs="0.0 0.0 0.468"/>
   <surface id="3" type="z-cylinder" coeffs="0.0 0.0 0.5375"/>
   <surface id="4" type="z-cylinder" coeffs="0.0 0.0 0.55"/>
   <surface id="5" type="z-cylinder" coeffs="0.0 0.0 0.6"/>
-  <surface id="6" name="minimum x" type="x-plane" coeffs="-9.9"/>
-  <surface id="7" name="maximum x" type="x-plane" coeffs="9.9"/>
-  <surface id="8" name="minimum y" type="y-plane" coeffs="-9.9"/>
-  <surface id="9" name="maximum y" type="y-plane" coeffs="9.9"/>
-  <surface id="10" name="minimum x" type="x-plane" coeffs="-39.6"/>
-  <surface id="11" name="maximum x" type="x-plane" coeffs="39.6"/>
-  <surface id="12" name="minimum y" type="y-plane" coeffs="-39.6"/>
-  <surface id="13" name="maximum y" type="y-plane" coeffs="39.6"/>
-  <surface id="14" type="z-cylinder" coeffs="0.0 0.0 57.49999999999999"/>
-  <surface id="15" type="z-cylinder" coeffs="0.0 0.0 60.49999999999999"/>
-  <surface id="16" type="z-cylinder" coeffs="0.0 0.0 75.0"/>
-  <surface id="17" type="z-cylinder" boundary="vacuum" coeffs="0.0 0.0 82.0"/>
-  <surface id="18" type="z-plane" boundary="vacuum" coeffs="-85.0"/>
-  <surface id="19" type="z-plane" boundary="vacuum" coeffs="85.0"/>
-  <surface id="20" type="z-plane" coeffs="-55.0"/>
-  <surface id="21" type="z-plane" coeffs="55.0"/>
+  <surface id="8" name="minimum x" type="x-plane" coeffs="-9.9"/>
+  <surface id="9" name="maximum x" type="x-plane" coeffs="9.9"/>
+  <surface id="10" name="minimum y" type="y-plane" coeffs="-9.9"/>
+  <surface id="11" name="maximum y" type="y-plane" coeffs="9.9"/>
+  <surface id="16" name="minimum x" type="x-plane" coeffs="-39.6"/>
+  <surface id="17" name="maximum x" type="x-plane" coeffs="39.6"/>
+  <surface id="18" name="minimum y" type="y-plane" coeffs="-39.6"/>
+  <surface id="19" name="maximum y" type="y-plane" coeffs="39.6"/>
+  <surface id="20" type="z-cylinder" coeffs="0.0 0.0 57.49999999999999"/>
+  <surface id="21" type="z-cylinder" coeffs="0.0 0.0 60.49999999999999"/>
+  <surface id="22" type="z-cylinder" coeffs="0.0 0.0 75.0"/>
+  <surface id="23" type="z-cylinder" boundary="vacuum" coeffs="0.0 0.0 82.0"/>
+  <surface id="24" type="z-plane" boundary="vacuum" coeffs="-85.0"/>
+  <surface id="25" type="z-plane" boundary="vacuum" coeffs="85.0"/>
+  <surface id="26" type="z-plane" coeffs="-55.0"/>
+  <surface id="27" type="z-plane" coeffs="55.0"/>
 </geometry>
