@@ -205,3 +205,7 @@ Factory-Manufactured 10 MWe Integral PWR (IPWR): Core Physics,
 Thermal-Hydraulics, Transportability Envelope, and Regulatory Alignment,"*
 Baseline Version 2.0 (Post-Review Re-Baseline), September 2026. Confidential
 document, restricted circulation.
+
+## Flux Map (13-10-26)
+
+![alt text](flux_map_xy.png)
