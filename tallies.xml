@@ -1,40 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <tallies>
-  <!--core_xy-->
-  <mesh id="1" name="core_xy">
-    <dimension>60 60 1</dimension>
-    <lower_left>-39.6 -39.6 -55.0</lower_left>
-    <upper_right>39.6 39.6 55.0</upper_right>
-  </mesh>
-  <!--core_axial-->
-  <mesh id="2" name="core_axial">
-    <dimension>1 1 56</dimension>
-    <lower_left>-39.6 -39.6 -85.0</lower_left>
-    <upper_right>39.6 39.6 85.0</upper_right>
-  </mesh>
-  <filter id="2" type="mesh">
-    <bins>1</bins>
+  <filter id="1" type="energy">
+    <bins>1e-05 1.757510624854793e-05 3.0888435964774785e-05 5.4286754393238594e-05 9.540954763499944e-05 0.00016768329368110083 0.00029470517025518097 0.0005179474679231213 0.0009102981779915217 0.0015998587196060573 0.002811768697974231 0.004941713361323833 0.00868511373751352 0.015264179671752334 0.026826957952797246 0.04714866363457394 0.08286427728546843 0.14563484775012445 0.2559547922699533 0.4498432668969444 0.7906043210907702 1.389495494373136 2.44205309454865 4.291934260128778 7.543120063354607 13.257113655901081 23.29951810515372 40.94915062380427 71.96856730011514 126.48552168552958 222.29964825261956 390.6939937054613 686.6488450042998 1206.7926406393265 2120.9508879201926 3727.593720314938 6551.2855685954955 11513.95399326448 20235.896477251554 35564.803062231214 62505.51925273976 109854.11419875572 193069.77288832457 339322.17718953296 596362.3316594637 1048113.1341546831 1842069.9693267164 3237457.54281764 5689866.029018281 10000000.0</bins>
   </filter>
-  <filter id="4" type="energy">
-    <bins>0.0 0.625 100000.0 20000000.0</bins>
-  </filter>
-  <filter id="3" type="mesh">
-    <bins>2</bins>
-  </filter>
-  <tally id="2" name="flux_xy">
-    <filters>2</filters>
+  <tally id="1" name="flux_spectrum">
+    <filters>1</filters>
     <scores>flux</scores>
-  </tally>
-  <tally id="3" name="flux_xy_groups">
-    <filters>2 4</filters>
-    <scores>flux</scores>
-  </tally>
-  <tally id="4" name="kappa_fission_xy">
-    <filters>2</filters>
-    <scores>kappa-fission</scores>
-  </tally>
-  <tally id="5" name="axial">
-    <filters>3</filters>
-    <scores>flux kappa-fission</scores>
   </tally>
 </tallies>

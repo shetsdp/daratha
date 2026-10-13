@@ -209,3 +209,12 @@ document, restricted circulation.
 ## Flux Map (13-10-26)
 
 ![alt text](flux_map_xy.png)
+
+## keff
+
+| Configuration | keff |
+|---|---|
+| No burnable poison No RCCA inserted | 1.18907 +/- 0.00084 |
+| With burnable poison No RCCA inserted | 1.05791 +/- 0.00083 |
+| No burnable poison with RCCA inserted | 0.89588 +/- 0.00085 |
+| With burnale poison with RCCA inserted | 0.80922 +/- 0.00075 |
